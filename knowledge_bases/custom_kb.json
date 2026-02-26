@@ -1415,6 +1415,25 @@
         "minimum_supported_version": "022.9.22",
         "recommended_version": "latest"
       }
+    },
+    {
+      "name": "mssql-jdbc",
+      "aliases": [
+        "mssql-jdbc-driver",
+        "microsoft-jdbc-driver",
+        "com.microsoft.sqlserver.mssql-jdbc"
+      ],
+      "compatibility": {
+        "supported_versions": [
+          {
+            "version_range": ">=6.0",
+            "status": "compatible",
+            "notes": "Microsoft JDBC Driver for SQL Server is a pure Java client driver. Runs on any JVM platform including ARM64/Graviton. The SQL Server database engine does not support ARM64, but the client JDBC driver is platform-independent."
+          }
+        ],
+        "minimum_supported_version": "6.0",
+        "recommended_version": "12.4"
+      }
     }
   ]
 }

@@ -3,8 +3,8 @@
   "deny_list": [
     {
       "name": "mssql-server",
-      "aliases": ["microsoft-sql-server", "sqlserver", "mssql"],
-      "reason": "Microsoft SQL Server does not support ARM64/Graviton architecture (Linux x86_64 only)",
+      "aliases": ["microsoft-sql-server"],
+      "reason": "Microsoft SQL Server engine does not support ARM64/Graviton architecture (Linux x86_64 only). Note: MSSQL client drivers (mssql-jdbc, go-mssqldb, etc.) are compatible with ARM64.",
       "minimum_supported_version": null,
       "recommended_alternative": "postgresql"
     }
